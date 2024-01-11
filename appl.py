@@ -5,8 +5,11 @@ from src.pipeline.prediction_pipeline import CustomData,PredictPipeline
 application=Flask(__name__)
 
 app=application
-
-
+##for AWS beanstack deployment rename this folder as application and .ebextensions folder
+##inside .ebextensions create folder python.config
+"""option_settings:
+    "aws:elasticbeanstalk:container:python":
+        WSGIPath: application:application"""
 
 @app.route('/')
 def home_page():
