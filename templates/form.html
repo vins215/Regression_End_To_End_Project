@@ -2,37 +2,37 @@
 <body>
 <form action="{{url_for('predict_datapoint')}}" method="POST">
     <div class="form-group">
-        <label for="carat">Carat:</label>
+        <label for="carat"  style="font-size: 22px;">Carat:</label>
         <input type="text" id="carat" name="carat" placeholder="Enter carat value (float)">
     </div>
 
     <div class="form-group">
-        <label for="depth">Depth:</label>
+        <label for="depth" style="font-size: 22px;">Depth:</label>
         <input type="text" id="depth" name="depth" placeholder="Enter depth value (float)">
     </div>
 
     <div class="form-group">  
-        <label for="table">Table:</label>
+        <label for="table" style="font-size: 22px;">Table:</label>
         <input type="text" id="table" name="table" placeholder="Enter table value (float)">
     </div>
     
     <div class="form-group">
-        <label for="x">x:</label>
+        <label for="x" style="font-size: 22px;">x:</label>
         <input type="text" id="x" name="x" placeholder="Enter x value (float)">
     </div>
   
     <div class="form-group">
-        <label for="y">y:</label>
+        <label for="y" style="font-size: 22px;">y:</label>
         <input type="text" id="y" name="y" placeholder="Enter y value (float)">
     </div>
   
     <div class="form-group">
-        <label for="z">z:</label>
+        <label for="z" style="font-size: 22px;">z:</label>
         <input type="text" id="z" name="z" placeholder="Enter z value (float)">
     </div>         
   
 <div class="form-group">
-  <label for="cut">Cut:</label>
+  <label for="cut" style="font-size: 22px;">Cut:</label>
   <select id="cut" name="cut">
     <option value="Fair">Fair</option>
     <option value="Good">Good</option>
@@ -43,7 +43,7 @@
 </div>
   
 <div class="form-group">
-  <label for="color">Color:</label>
+  <label for="color" style="font-size: 22px;">Color:</label>
   <select id="color" name="color">
     <option value="D">D</option>
     <option value="E">E</option>
@@ -56,7 +56,7 @@
 </div>
 
 <div class="form-group">
-  <label for="clarity">Clarity:</label>
+  <label for="clarity" style="font-size: 22px;">Clarity:</label>
   <select id="clarity" name="clarity">
     <option value="I1">I1</option>
     <option value="SI2">SI2</option>
@@ -70,7 +70,43 @@
 </div>
 
 <div style="clear:both;"></div>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" style="font-size: 22px;">
 </form>
+
+<div> 
+    <h1>Feature description of diamond</h1>
+
+    <div class="carat">
+        <h4>Carat -  <span style="font-weight: normal;">Carat ranges from 0 to 3  </span></h4>
+        <img src="carat.jpeg" alt="carat" height="200" width="200"/>
+    </div>
+
+    <div class="cut">
+        <h4>Cut -  <span style="font-weight: normal;">"fair"<"good"<"very good"<"premimum"<"ideal" </span></h4>
+
+       
+    </div>
+
+    <div class="color">
+        <h4>Color -  <span style="font-weight: normal;">D>E>F>G  </span></h4>
+     
+    </div>
+
+    <div class="clarity">
+        <h4>Clarity -  <span style="font-weight: normal;">IF,VVSI,VVS2,VSI,VS2,SII,SI2,II  </span></h4>
+        <img src="clarity.jpeg" alt="carat" height="400" width="400"/>
+    </div>
+
+    <div class="table">
+        
+        <h4>depth -  <span style="font-weight: normal;">Depth value ranges from 50 to 75 </span></h4>
+        <h4>table -  <span style="font-weight: normal;">Table value ranges from 50 to 70 </span></h4>
+        <h4>X -  <span style="font-weight: normal;">X value ranges from 0 to 10 </span></h4>
+        <h4>Y -  <span style="font-weight: normal;">Y value ranges from 0 to 10 </span></h4>
+        <h4>Z -  <span style="font-weight: normal;">Z value ranges from 0 to 10 </span></h4>
+        <img src="table.jpeg" alt="carat" height="400" width="400"/>
+        
+    </div>
+</div>
 </body>
 </html>
